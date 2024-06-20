@@ -1,0 +1,75 @@
+@import url("fonts.css");
+@import url("icons.css");
+@import url("modern-normalize.css");
+
+/* components */
+
+@import url("../../components/header/header.css");
+@import url("../../components/logo/logo.css");
+@import url("../../components/footer/footer.css");
+@import url("../../components/button/button.css");
+@import url("../../components/title/title.css");
+@import url("../../components/address/address.css");
+
+/* components */
+
+
+/* blocks */
+
+@import url("../../blocks/map/map.css");
+@import url("../../blocks/recycling/recycling.css");
+@import url("../../blocks/news/news.css");
+@import url("../../blocks/solutions/solutions.css");
+@import url("../../blocks/prices/prices.css");
+@import url("../../blocks/benefits/benefits.css");
+@import url("../../blocks/about/about.css");
+@import url("../../blocks/all-news/all-news.css");
+
+/* blocks */
+
+@import url("../icon-font/glyphter/css/Glyphter.css");
+
+:root {
+  --opacity: 0.7;
+  --scale: 0.9;
+  --green: #247A36;
+  --black: #1F1F1F;
+  --grey: #484848;
+  --accent: var(--green);
+  --padding: 20px;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  color: var(--grey);
+  font-family: "Inter";
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+  background-color: #e5e5e5;
+}
+
+.container {
+  width: 100%;
+  margin: 0px auto;
+  max-width: 1300px;
+}
+
+.fullscreen {
+  min-height: 100dvh;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  min-height: 100dvh;
+  flex-direction: column;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+}

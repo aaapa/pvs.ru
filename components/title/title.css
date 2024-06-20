@@ -1,0 +1,13 @@
+.title {
+  color: black;
+  line-height: 150%;
+  text-transform: uppercase;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+}
+
+.title span {
+  padding: 6px;
+  color: #fff;
+  border-radius: 6px;
+  background-color: var(--accent);
+}

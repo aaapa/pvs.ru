@@ -1,0 +1,136 @@
+.recycling {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 30px var(--padding);
+}
+
+.recycling__body {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	gap: 100px;
+	justify-content: space-between
+}
+
+.recycling__decor {
+	max-width: 500px;
+	height: 500px;
+	flex-shrink: 0;
+}
+
+.recycling__cards {
+	display: flex;
+	gap: 30px;
+  max-width: 630px;
+	flex-wrap: wrap;
+	position: relative;
+	justify-content: center;
+	filter: drop-shadow(-1px 7px 11px rgba(0, 0, 0, 0.5019607843))
+}
+
+.recycling__cards * {
+	z-index: 2;
+}
+
+.recycling__cards::before {
+	content: "";
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 1;
+	transform: translate(-50%, -50%);
+	display: inline-block;
+	background: url("../../src/imgs/recycling/recycling-icon.webp") 0% 0% / cover no-repeat;
+}
+
+.recycling__cards-item {
+	display: flex;
+	align-items: end;
+	justify-content: end;
+}
+
+.recycling__cards-item:nth-child(3) {
+	display: inline;
+}
+
+.recycling__card {
+	display: flex;
+	gap: 30px;
+	padding: 20px;
+	max-width: 300px;
+	border-radius: 10px;
+	flex-direction: column;
+	background-color: #fff
+}
+
+.recycling__card-header {
+	width: 100%
+}
+
+.recycling__card-image {
+	width: 100%;
+	height: 100px;
+	border-radius: 10px
+}
+
+.recycling__card-footer {
+	display: flex;
+	gap: 20px;
+	flex-direction: column;
+	justify-content: center
+}
+
+.recycling__card-description {
+	max-width: 500px
+}
+
+.recycling__content {
+	display: flex;
+	gap: 50px;
+	flex-direction: column
+}
+
+.recycling__title {
+	max-width: 700px
+}
+
+.recycling__description {
+	max-width: 700px
+}
+
+@media(max-width: 992px) {
+	.recycling__body {
+		flex-wrap: wrap;
+		justify-content: center
+	}
+
+	.recycling__content {
+		align-items: center;
+		justify-content: center
+	}
+
+	.recycling__title {
+		text-align: center;
+		max-width: unset
+	}
+
+	.recycling__description {
+		text-align: center
+	}
+
+	.recycling__content {
+		display: none;
+	}
+	
+	.recycling__cards-item:nth-child(2) {
+		margin-block-start: unset
+	}
+
+	.recycling__cards-item:nth-child(4) {
+		display: none
+	}
+}

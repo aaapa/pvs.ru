@@ -1,0 +1,22 @@
+.button {
+  color: #fff;
+  background-color: var(--accent);
+  font-size: 1.125rem;
+  border-radius: 100px;
+  padding: 15px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center
+}
+
+@media(hover: hover) {
+  .button:hover {
+      opacity: var(--opacity);
+  }
+}
+
+.button:active {
+  scale: var(--scale);
+}

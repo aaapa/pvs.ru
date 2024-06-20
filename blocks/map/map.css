@@ -1,0 +1,56 @@
+.map {
+  width: 100%;
+  display: flex;
+  padding: var(--padding);
+  align-items: center;
+  justify-content: center;
+  scroll-margin-block-start: 50px;
+}
+
+.map__body {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.map__address {
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  left: 50px;
+  padding-block: unset;
+  padding-inline: unset;
+}
+
+.map__address .address__card {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: fit-content;
+  align-items: start;
+  flex-wrap: nowrap;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.map__iframe {
+  width: 100%;
+  height: 500px;
+}
+
+@media (max-width: 715px) {
+  .map__iframe {
+    height: 300px !important;
+  }
+
+  .map__address {
+    position: static;
+  }
+
+  .map__address .address__card * {
+    font-size: 1rem;
+  }
+}

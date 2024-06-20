@@ -1,0 +1,57 @@
+.address {
+  width: 100%;
+  font-style: normal;
+  padding-block: 50px;
+  padding-inline: var(--padding);
+}
+
+.address__body {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.address__card {
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  min-height: 200px;
+  font-size: 1.25rem;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.address__card-title {
+  color: var(--accent);
+  text-transform: uppercase;
+  font-size: clamp(1.1rem, 5vw, 1.875rem);
+}
+
+.address__card-info {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.address__card-info-title {
+  font-weight: bold;
+}
+
+.address__card-tel {
+  color: var(--accent);
+  text-transform: uppercase;
+  font-size: clamp(1.1rem, 5vw, 1.875rem);
+}
+
+@media (hover:hover) {
+  .address__card-tel:hover {
+    opacity: var(--opacity);
+  }
+}
+
+.address__card-tel:active {
+  scale: var(--scale);
+}

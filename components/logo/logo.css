@@ -1,0 +1,20 @@
+.logo {
+	color: whitesmoke;
+	font-weight: bold;
+	display: inline-block;
+	font-size: clamp(1.3rem, 5vw, 2.3rem);
+}
+
+.logo span {
+	color: var(--accent);
+}
+
+@media(hover: hover) {
+	.logo:hover {
+		opacity: var(--opacity);
+	}
+}
+
+.logo:active {
+	scale: var(--scale);
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+ <html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../src/css/base.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ПВС.РФ - о нас</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__body container">
+          <a class="logo" href="../index.html" data-tippy-content="приём-вторичного-сырья.рф">ПВС.<span>РФ</span></a>
+          <div class="header__menu">
+            <nav class="header__nav">
+              <ul class="header__list">
+                <li class="header__list-item"><a class="header__link" href="../index.html">Главная</a></li>
+                <li class="header__list-item"><span class="header__link active">О нас</span></li>
+                <li class="header__list-item"><a class="header__link" href="all-news.html">Новости</a></li>
+                <li class="header__list-item"><a class="header__link" href="prices.html">Цены</a></li>
+                <li class="header__list-item"><a class="header__link" href="#contacts">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+          <button class="header__menu-button" type="button" aria-label="Нажмите, чтобы открыть меню"><span class="header__menu-icon"><span></span><span></span><span></span><span></span></span></button>
+        </div>
+      </header>
+      <main class="main">
+        <section class="about fullscreen">
+          <div class="about__body container">
+            <div class="about__content">
+              <header class="about__header">
+                <h1 class="about__title title">Сдай макулатуру - <span>спаси планету!</span></h1>
+                <i class="about__description">
+                  Мы - команда энтузиастов, которые верят в
+                  силу переработки и заботу об окружающей
+                  среде. Наша компания "ПВС.РФ" была основана в 2020 году с
+                  целью вовлечь как можно больше людей
+                  в процесс сбора и переработки макулатуры.
+                </i>
+              </header>
+              <footer class="about__footer">
+                <div class="about__links">
+                  <a class="about__button button" href="#map">Сдать макулатуру</a>
+                  <a class="about__button button" href="prices.html">Цены</a>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </section>
+        <div id="map" class="map">
+          <div class="map__body container">
+          <address class="map__address address">
+            <div class="address__body">
+                <div class="address__card">
+                  <h2 class="address__card-title">Пункты приема макулатуры</h2>
+                  <div class="address__card-info">
+                    <strong class="address__card-info-title">Адрес</strong>
+                    <span>г. Владимир, ул. Производственная 5</span>                  
+                  </div>
+                  <div class="address__card-info">
+                    <strong class="address__card-info-title">Телефон</strong>
+                    <a class="address__card-tel" href="tel:+79955367699">+7 995 536-76-99</a>                  
+                  </div>
+                </div>
+              </div>
+          </address>
+          <div class="map__iframe">
+            <script defer async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aec7c2681856f4aa4f8c73515ada2478f93da354e803aa7ea22c5d2d349504a6f&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+          </div>        
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__body">
+          <div class="footer__content"><a class="footer__logo logo" href="../index.html" data-tippy-content="приём-вторичного-сырья.рф">ПВС.<span>РФ</span></a>
+            <nav class="footer__nav">
+              <ul class="footer__list">
+                <li><a class="footer__link" href="../index.html">Главная</a></li>
+                <li><a class="footer__link" href="#!">О нас</a></li>
+                <li><a class="footer__link" href="#prices">Цены</a></li>
+              </ul>
+            </nav>
+            <nav class="footer__nav" id="contacts">
+              <ul class="footer__list">
+                <li>
+                 <a class="footer__social-link footer__link" href="https://wa.me/+79955367699" aria-label="whatsapp" data-tippy-content="whatsapp">
+                  <span class="icon-whatsapp"></span>
+                 </a>
+                </li>
+                <li>
+                 <a class="footer__social-link footer__link" href="https://t.me/+79955367699" aria-label="telegram" data-tippy-content="telegram">
+                  <span class="icon-telegram"></span>
+                 </a>
+                </li>
+
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__copyright">
+            <div class="footer__copyright-body container">
+<span>Все материалы сайта ПВС.РФ.ru принадлежат ООО “Уборка”. Копиравание и скачивание без разрешения автора запрещены.</span>
+              <span>Все права защищены</span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="../src/libraries/tippy/popper.js"></script>
+    <script src="../src/libraries/tippy/tippy.js"></script>
+   <script type="module" src="../src/main.js"></script>
+  </body>
+</html>
